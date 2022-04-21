@@ -82,6 +82,9 @@ class UsersLoader extends Component {
     const { hendleResult } = this.state;
     this.setState({ hendleResult: Number(prompt('get number')) });
   };
+  lendleGetResults = e => {
+    this.setState({ hendleResult: Number(e.target.value) });
+  };
   // this.getNamber();
 
   //
@@ -94,7 +97,7 @@ class UsersLoader extends Component {
       <>
         {/* <button onClick={this.getNamber}></button> */}
         <br />
-        {/* <input type='number' onChange={this.lendleGetResults} /> */}
+        <input type='number' onChange={this.lendleGetResults} />
         <button onClick={this.decrement}>prev page</button>
         <button onClick={this.increment}>next page</button>
         {error && <div>!!!error!!!</div>}
