@@ -3,6 +3,5 @@ const CONFIGS = {
   RESULTS_ORDER: 'alpo6259',
   INCLUDUNG_RESULTS: ['name', 'gender', 'id', 'picture', 'login'],
 };
-// 'email','login'
 
 export default CONFIGS;

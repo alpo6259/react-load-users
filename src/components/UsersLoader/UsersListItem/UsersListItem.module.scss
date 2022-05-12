@@ -1,0 +1,39 @@
+.containerItem {
+  display: flex;
+  min-width: 300px;
+  border: 1px solid silver;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 5px 15px;
+}
+%img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.imgMale {
+  @extend %img;
+  border: 1px solid blue;
+}
+
+.imgFemale {
+  @extend %img;
+  border: 1px solid red;
+}
+
+.containerInfoItem {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  div {
+    span {
+      padding: 1px 5px;
+      margin: 2px;
+      font-size: 14px;
+    }
+  }
+}

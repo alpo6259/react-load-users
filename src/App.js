@@ -1,5 +1,3 @@
-import logo from './logo.svg';
-import './App.css';
 import UsersLoader from './components/UsersLoader';
 
 function App () {
